@@ -1,0 +1,11 @@
+Flask
+Flask-SQLAlchemy
+Flask-Bcrypt
+Flask-Login
+Flask-Mail
+email_validator
+itsdangerous
+gunicorn
+psycopg2-binary
+Flask-WTF
+
