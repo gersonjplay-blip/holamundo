@@ -11,7 +11,11 @@ class Config:
 
     MAIL_PASSWORD = os.environ.get('EMAIL_PASS')
 
-    print("SECRET_KEY:", app.config['SECRET_KEY'])
-    print("SQLALCHEMY_DATABASE_URI:", app.config['SQLALCHEMY_DATABASE_URI'])
-    print("MAIL_USERNAME:", app.config['MAIL_USERNAME'])
-    print("MAIL_PASSWORD:", app.config['MAIL_PASSWORD'])
+      # --- SOLO PARA DEBUG EN RENDER ---
+    print("== VARIABLES DE ENTORNO LEÍDAS ==")
+    print("SECRET_KEY:", os.environ.get('SECRET_KEY'))
+    print("SQLALCHEMY_DATABASE_URI:", os.environ.get('SQLALCHEMY_DATABASE_URI'))
+    print("EMAIL_USER:", os.environ.get('EMAIL_USER'))
+    print("EMAIL_PASS:", os.environ.get('EMAIL_PASS'))
+    print("================================")
+
