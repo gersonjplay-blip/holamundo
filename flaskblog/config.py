@@ -8,4 +8,10 @@ class Config:
     MAIL_PORT = 587
     MAIL_USE_TLS = True
     MAIL_USERNAME = os.environ.get('EMAIL_USER')
+
     MAIL_PASSWORD = os.environ.get('EMAIL_PASS')
+
+    print("SECRET_KEY:", app.config['SECRET_KEY'])
+    print("SQLALCHEMY_DATABASE_URI:", app.config['SQLALCHEMY_DATABASE_URI'])
+    print("MAIL_USERNAME:", app.config['MAIL_USERNAME'])
+    print("MAIL_PASSWORD:", app.config['MAIL_PASSWORD'])
